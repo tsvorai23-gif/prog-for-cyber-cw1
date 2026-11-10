@@ -76,9 +76,7 @@ The program includes four main functions:
 
 - Run the program using the terminal: "python security_tool.py"
 
-- Replace the filename above if your Python file has a different name.
-
-- Testing and Evidence
+## Testing and Evidence
 
 - The program should be tested using:
 
