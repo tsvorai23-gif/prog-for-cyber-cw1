@@ -1,110 +1,151 @@
 # B01888101 Tristan Svorai
-# Lab exercise 5
-# # Task 5
-# 20/10/2026
+# Lab exercise 2
+# Task 8
+# 02/10/2026
+
+"""This program implements a security tool with three main functions"""
+
+CORRECT_USERNAME = "admin"
+CORRECT_PASSWORD = "Pa$$w0rd"
 
 
-import random
-import string
+"""1. Security Event Counter: Counts correct and incorrect password attempts
+and calculates the percentage of incorrect attempts."""
 
-"""This function checks if the password follows the password policy set in the task."""
-def check_password(password: str) -> bool:
+def security_event_counter():
+    """This function counts correct and incorrect password attempts
+    and calculates the percentage of incorrect attempts."""
 
-    if len(password) < 10:
-        return False
+    correct = 0
+    incorrect = 0
 
-    if " " in password:
-        return False
+    print("\n--- Security Event Counter ---")
 
-    uppercase = 0
-    lowercase = 0
-    numbers = 0
-    symbols = 0
+    for attempt in range(10):
 
-    allowed_symbols = "!@#$%"
+        password = input("Enter password: ")
 
-    for char in password:
-        if char.isupper():
-            uppercase += 1
-        elif char.islower():
-            lowercase += 1
-        elif char.isdigit():
-            numbers += 1
-        elif char in allowed_symbols:
-            symbols += 1
+        if password == CORRECT_PASSWORD:
+            correct += 1
         else:
-            return False
+            incorrect += 1
 
-    return (uppercase >= 1 and
-            lowercase >= 1 and
-            numbers >= 2 and
-            symbols >= 1)
+    percentage = (incorrect / 10) * 100
 
 
-"""This function validates an IPv4 address."""
-def validate_ip(ip):
+    print("\nCorrect passwords:", correct)
+    print("Incorrect passwords:", incorrect)
+    print("Incorrect percentage:", percentage, "%")
 
-    ip = ip.strip()
-
-    if "." not in ip or ip.count(".") != 3:
-        return False
-
-    parts = ip.split(".")
-
-    if len(parts) != 4:
-        return False
-
-    for part in parts:
-
-        if not part.isdigit():
-            return False
-
-        number = int(part)
-
-        if number < 0 or number > 255:
-            return False
-
-    return True
+    if percentage > 50:
+        print("ALERT: More than 50% of passwords were incorrect!")
 
 
-"""This function generates a random password that meets the password policy."""
-def generate_password() -> str:
+"""2. Brute-Force Simulation: Simulates a brute-force attack by allowing
+the user to guess a password up to a maximum number of attempts."""
 
-    length = random.randint(10, 16)
+def brute_force_simulation():
+    """This function simulates a brute-force attack by allowing the user
+    to guess a password up to a maximum number of attempts."""
 
-    # Guarantee the minimum password requirements
-    password_chars = [
-        random.choice(string.ascii_uppercase),
-        random.choice(string.ascii_lowercase),
-        random.choice(string.digits),
-        random.choice(string.digits),
-        random.choice("!@#$%")
-    ]
+    password = "secret123"
+    max_attempts = 5
+    attempts = 0
 
-    # Fill the remaining password length
-    all_chars = string.ascii_letters + string.digits + "!@#$%"
+    print("\n--- Brute-Force Simulation ---")
 
-    for i in range(length - 5):
-        password_chars.append(random.choice(all_chars))
+    while attempts < max_attempts:
 
-    # Shuffle characters so requirements aren't always in the same positions
-    random.shuffle(password_chars)
+        guess = input("Enter password guess: ")
+        attempts += 1
 
-    password = "".join(password_chars)
+        if guess == password:
+            print("Password found!")
+            print("Attempts used:", attempts)
+            return
 
-    return password
+        print("Incorrect password.")
+
+    print("Maximum attempts reached.")
+    print("Brute-force simulation stopped.")
+
+
+"""3. Login Authentication: Authenticates users by checking their
+credentials against the correct username and password."""
+
+def login_authentication():
+    """This function authenticates users by checking their credentials
+    against the correct username and password."""
+
+    max_attempts = 3
+    failed_attempts = 0
+
+    print("\n--- Login Authentication ---")
+
+    while failed_attempts < max_attempts:
+
+        username = input("Enter username: ")
+        password = input("Enter password: ")
+
+        if username == CORRECT_USERNAME and password == CORRECT_PASSWORD:
+            print("Authentication successful!")
+            return True
+
+        failed_attempts += 1
+
+        print("Authentication failed.")
+
+        if failed_attempts < max_attempts:
+            print("Please try again.")
+
+    print("Account frozen for 24 hours.")
+    return False
+
+
+"""This function displays the security menu and allows the user to
+select different functionalities of the security tool."""
+
+def security_menu():
+    """This function displays the security menu and allows the user
+    to select different functionalities of the security tool."""
+
+    while True:
+        """This loop displays the security menu and handles user input
+        for selecting different functionalities."""
+
+        print("\n===== SECURITY MENU =====")
+        print("1. Security Event Counter")
+        print("2. Brute-Force Simulation")
+        print("3. Login Authentication")
+        print("4. Exit")
+
+        choice = input("Select an option: ")
+
+        if choice == "1":
+            security_event_counter()
+
+        elif choice == "2":
+            brute_force_simulation()
+
+        elif choice == "3":
+            login_authentication()
+
+        elif choice == "4":
+            print("Thank you for using the security tool")
+            break
+
+        else:
+            print("Invalid choice. Please select 1-4.")
+
+
+"""This is the main function that starts the security tool program."""
 
 def main():
-    generated_password = generate_password()
 
-    print("\nYour randomly generated password is:")
-    print(generated_password)
+    print("===== SECURITY TOOL =====")
 
-    print("\nPassword valid:", check_password(generated_password))
-
-    print("\nValid IP:", validate_ip("192.168.10.15"))
-    print("Invalid IP:", validate_ip("192.168.10.300"))
+    if login_authentication():
+        security_menu()
 
 
-if __name__ == "__main__":
-    main()
+main()
