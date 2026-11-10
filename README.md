@@ -66,8 +66,6 @@ The actual event details depend on the program's implementation.
 
 - Run the program: "python security_event_logger.py"
 
-- Replace the filename above if your Python file has a different name.
-
 ## Testing and Evidence
 
 The program should be tested using:
