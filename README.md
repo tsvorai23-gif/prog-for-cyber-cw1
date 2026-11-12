@@ -10,9 +10,9 @@ Banner ID: b01888101
 
 ## Description
 
-This Python program performs basic IPv4 address format validation using a user-defined function called validate_ip().
+This program performs basic IPv4 address validation using a user-defined function called validate_ip().
 
-The function accepts an IP address as a parameter and checks whether it follows the basic structure of an IPv4 address.
+The function accepts an IP address as a parameter and checks if it follows the basic structure of an IPv4 address.
 
 The program uses string operations, conditional statements and a function to determine whether the entered IP address meets the required validation checks.
 
@@ -82,11 +82,9 @@ Note: This exercise performs basic IPv4 format validation rather than a complete
 
 - Run the program: "python ip_address_validator.py"
 
-- Replace the filename above if your Python file has a different name.
-
 ## Testing and Evidence
 
-The program should be tested using:
+The program has been tested using:
 
 - A correctly formatted IPv4 address.
 
