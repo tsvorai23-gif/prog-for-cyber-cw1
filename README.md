@@ -10,11 +10,9 @@ Banner ID: b01888101
 
 ## Description
 
-This Python program implements a basic security tool.
+This program is a basic security tool.
 
 The program requires the user to authenticate before accessing a security menu. Once authenticated, the user can select from several security functions.
-
-The program demonstrates the use of Python functions, variables, loops, conditional statements and user input.
 
 ## Features
 
@@ -78,7 +76,7 @@ The program includes four main functions:
 
 ## Testing and Evidence
 
-- The program should be tested using:
+- The program has been tested using:
 
 - Correct and incorrect passwords.
 
