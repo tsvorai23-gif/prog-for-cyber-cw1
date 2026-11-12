@@ -10,11 +10,11 @@ Banner ID: b01888101
 
 ## Description
 
-This Python program acts as a basic security event logger. It records login attempts and displays information about each authentication event.
+This program acts as a basic security event logger. It records login attempts and displays information about each authentication event.
 
 The program repeatedly requests a username and password until the correct credentials are entered.
 
-Each login attempt generates an event log containing information about the attempt. This includes the event ID, username, IP address, event description and timestamp.
+Each login attempt displays an event log containing information about the attempt. This includes the event ID, username, IP address, event description and timestamp.
 
 ## Features
 
@@ -68,7 +68,7 @@ The actual event details depend on the program's implementation.
 
 ## Testing and Evidence
 
-The program should be tested using:
+The program has been tested using:
 
 - An incorrect username.
 
