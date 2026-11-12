@@ -20,9 +20,7 @@ The program uses string operations, conditional statements and a function to det
 
 The program performs the following checks:
 
-- Removes unnecessary spaces from the input.
-
-- Checks whether the IP address contains dots.
+- Checks if the IP address contains dots.
 
 - Checks that there are exactly three dots.
 
