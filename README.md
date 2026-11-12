@@ -10,15 +10,13 @@ Banner ID: b01888101
 
 ## Description
 
-This Python program manages basic security incident information using a Python dictionary.
+This program manages basic security incident information using a Python dictionary.
 
 A dictionary is used to store information about a security incident, including the username, IP address, event type and risk level.
 
-The program demonstrates how dictionaries can be created, accessed, updated and modified to manage security-related information.
-
 ## Features
 
-- The program performs the following operations:
+The program performs the following operations:
 
 - Creates a dictionary containing security incident information.
 
@@ -33,26 +31,6 @@ The program demonstrates how dictionaries can be created, accessed, updated and 
 - Displays all remaining keys and values.
 
 - Displays the total number of key-value pairs.
-
-- The Python code also includes comments explaining important sections of the program.
-
-- Python Concepts Demonstrated
-
-- Dictionaries.
-
-- Key-value pairs.
-
-- Accessing dictionary values.
-
-- Adding dictionary entries.
-
-- Updating existing values.
-
-- Removing dictionary entries.
-
-- Displaying dictionary contents.
-
-- Using comments to improve readability.
 
 ## How to Run
 
@@ -76,7 +54,7 @@ Requirements:
 
 ## Testing and Evidence
 
-The program should be tested to confirm that:
+The program has  been tested to confirm that:
 
 - The original dictionary is created correctly.
 
