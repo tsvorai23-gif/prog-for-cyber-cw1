@@ -22,13 +22,13 @@ The main.py file imports the module, requests information from the user and disp
 
 The project includes three main functions:
 
-- Password Validation
+### 1. Password Validation
 
 - Checks whether a password meets the minimum length requirement.
 
 - Checks for at least one character, digit and symbol.
 
-- IP Address Validation
+### 2. IP Address Validation
 
 - Checks that an IP address contains three dots.
 
@@ -36,7 +36,7 @@ The project includes three main functions:
 
 - Checks that each octet is between 0 and 255.
 
-- Random Password Generator
+### 3. Random Password Generator
 
 - Generates a random password between 10 and 16 characters long.
 
@@ -48,15 +48,11 @@ The project includes three main functions:
 
 The project contains two main Python files:
 
-- File
-
-- Purpose
-
-- security_tools.py
+### 1. security_tools.py
 
 - Contains the reusable cyber security functions.
 
-- main.py
+### 2. main.py
 
 - Imports the module, requests user input and displays the results.
 
