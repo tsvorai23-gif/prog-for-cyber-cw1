@@ -10,23 +10,19 @@ Banner ID: b01888101
 
 ## Description
 
-This Python project demonstrates how user-defined modules can be used to organise and reuse cyber security functions.
+This program is split into two Python files: security_tools.py and main.py.
 
-The project is divided into two Python files: security_tools.py and main.py.
+security_tools.py which contains reusable functions for password validation, IP address validation and strong random password generation.
 
-The security_tools.py module contains reusable functions for password validation, IP address validation and strong random password generation.
-
-The main.py file imports the module, requests information from the user and displays the results of the validation functions.
+main.py file which imports the security-tools.py module, requests inputs from the user and displays the results of the validation functions.
 
 ## Features
 
-The project includes three main functions:
-
 ### 1. Password Validation
 
-- Checks whether a password meets the minimum length requirement.
+- Checks if a password meets the minimum length requirement.
 
-- Checks for at least one character, digit and symbol.
+- Checks for at least one upper case character, number and symbol.
 
 ### 2. IP Address Validation
 
@@ -46,7 +42,7 @@ The project includes three main functions:
 
 ## Project Structure
 
-The project contains two main Python files:
+The branch holds two main Python files:
 
 ### 1. security_tools.py
 
@@ -56,11 +52,9 @@ The project contains two main Python files:
 
 - Imports the module, requests user input and displays the results.
 
-- Python Concepts Demonstrated
+- User-defined functions.
 
-- Creating user-defined functions.
-
-- Creating and importing Python modules.
+- Importing Python modules.
 
 - Function parameters and return values.
 
@@ -94,11 +88,11 @@ Requirements:
 
 - Run the main program: "python main.py"
 
-Important: Run main.py rather than security_tools.py, as the main file imports and uses the functions from the module.
+Note: Run main.py rather than security_tools.py, as the main file imports and uses the functions from the module.
 
 ## Testing and Evidence
 
-The project should be tested using:
+The project has been tested using:
 
 - A password that meets the requirements.
 
