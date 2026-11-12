@@ -76,7 +76,7 @@ The program includes four main functions:
 
 ## Testing and Evidence
 
-- The program has been tested using:
+The program has been tested using:
 
 - Correct and incorrect passwords.
 
