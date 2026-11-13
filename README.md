@@ -14,6 +14,12 @@ This program is a basic security tool.
 
 The program requires the user to log in before accessing the security menu. Once logged in, the user can select from several security functions.
 
+### Security-event-counter
+
+- Counts log-in attemps
+
+- Calculates percentage of failed log-ins
+
 ### Brute-Force Simulation
 
 - Uses a predefined password.
