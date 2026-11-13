@@ -10,85 +10,35 @@ Banner ID: b01888101
 
 ## Description
 
-This program is split into two Python files: security_tools.py and main.py.
+This program is split into two programs: security_tools.py and main.py.
 
-security_tools.py which contains reusable functions for password validation, IP address validation and strong random password generation.
+security_tools.py which uses functions for password validation, IP address validation and random password generation.
 
-main.py file which imports the security-tools.py module, requests inputs from the user and displays the results of the validation functions.
+main.py file which imports the security-tools.py module, ask's the user for inputs and then displays the results of the validation functions.
 
-### 1. security_tools.py
+## How to use this program:
 
-- Contains the reusable cyber security functions.
+- 1. Download or clone the program.
 
-### 2. main.py
+- 2. Open the project folder in Visual Studio Code or Python.
 
-- Imports the module, requests user input and displays the results.
+- 3. Emsure both files are in the same directory.
 
-- User-defined functions.
+- 4. Open the terminal and run the main program: "python main.py" or just hit the run button.
 
-- Importing Python modules.
-
-- Function parameters and return values.
-
-- String operations.
-
-- Conditional statements.
-
-- Random password generation.
-
-- Code reuse and organisation.
-
-## How to Run
-
-Requirements:
-
-- Python 3 installed.
-
-- Visual Studio Code or another Python-compatible editor.
-
-## How to:
-
-- Open the cyber-security-utilities branch.
-
-- Download or clone the repository.
-
-- Open the project folder in Visual Studio Code.
-
-- Make sure both Python files are in the same directory.
-
-- Open the terminal.
-
-- Run the main program: "python main.py"
-
-Note: Run main.py rather than security_tools.py, as the main file imports and uses the functions from the module.
+Note: Run main.py instead of security-tools.py, as the main file imports and uses the functions from security-tools.py.
 
 ## Testing
 
-The project has been tested using:
+I have tested the program using:
 
-- A password that meets the requirements.
+- Valid password.
 
-- A password that does not meet the requirements.
+- Invalid password.
 
-- A valid IP address.
+- Valid IP address.
 
-- An invalid IP address.
+- Invalid IP address.
 
-- Generated passwords of different lengths.
-
-- Generated passwords containing all required character types.
-
-Screenshots showing the program running and its results are included in this branch.
-
-## Files
-
-- main.py – Main program.
-
-- security_tools.py – Reusable functions.
-
-- README.md – Task documentation.
-
-- LICENSE – Repository licence.
-
-- Testing screenshots.
+Screenshots showing my testing are on test.png.
 
