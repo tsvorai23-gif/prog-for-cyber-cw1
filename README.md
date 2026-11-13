@@ -14,49 +14,19 @@ This program manages basic security incident information using a Python dictiona
 
 A dictionary is used to store information about a security incident, including the username, IP address, event type and risk level.
 
-## Features
-
-The program performs the following operations:
-
-- Creates a dictionary containing security incident information.
-
-- Displays the username and IP address.
-
-- Adds a new field called status.
-
-- Updates the risk level.
-
-- Removes a field from the dictionary.
-
-- Displays all remaining keys and values.
-
-- Displays the total number of key-value pairs.
-
 ## How to Run
-
-Requirements:
-
-- Python 3 installed.
-
-- Visual Studio Code or another Python-compatible editor.
 
 ## Instructions:
 
-- Open the security-incident-manager branch.
+- Download or clone this repository.
 
-- Download or clone the repository.
+- Open the program in Visual Studio Code or python.
 
-- Open the Python program in Visual Studio Code.
-
-- Open the terminal.
-
-- Run the program: "python security_incident_manager.py"
+- Open the terminal run the program: "python security_incident_manager.py" or hit the run button.
 
 ## Testing and Evidence
 
-The program has  been tested to confirm that:
-
-- The original dictionary is created correctly.
+I tested the program using:
 
 - The username and IP address are displayed.
 
@@ -64,21 +34,8 @@ The program has  been tested to confirm that:
 
 - The risk level is updated.
 
-- A dictionary field is successfully removed.
-
 - All remaining keys and values are displayed.
 
-- The total number of dictionary entries is correct.
+- The total number of keys is displayed correctly.
 
-Screenshots of the program output are included in this branch.
-
-## Files
-
-- Python implementation.
-
-- README.md – Task documentation.
-
-- LICENSE – Repository licence.
-
-- Testing screenshots.
-
+Screenshots of my testing are in test.png.
