@@ -12,21 +12,7 @@ Banner ID: b01888101
 
 This program is a basic security tool.
 
-The program requires the user to authenticate before accessing a security menu. Once authenticated, the user can select from several security functions.
-
-## Features
-
-The program includes four main functions:
-
-### Security Event Counter
-
-- Requests a password ten times.
-
-- Counts correct and incorrect password attempts.
-
-- Calculates the percentage of incorrect attempts.
-
-- Displays an alert if more than 50% of attempts are incorrect.
+The program requires the user to log in before accessing the security menu. Once logged in, the user can select from several security functions.
 
 ### Brute-Force Simulation
 
@@ -46,37 +32,25 @@ The program includes four main functions:
 
 - Allows up to three failed login attempts.
 
-- Displays an account freeze message after reaching the maximum attempts.
+- Displays a failed log in message after reaching maximum attempts.
 
 ### Exit
 
 - Ends the program.
 
-- Displays a thank-you message.
+- Displays a thank-you message to the user.
 
 ## How to Run
 
-### Requirements:
+- Download or clone this repository.
 
-- Python 3 installed.
+- Open the program in Visual Studio Code or Python.
 
-- Visual Studio Code or another Python-compatible editor.
-
-### Instructions:
-
-- Open the security-tool branch.
-
-- Download or clone the repository.
-
-- Open the task folder in Visual Studio Code.
-
-- Open the Python program.
-
-- Run the program using the terminal: "python security_tool.py"
+- Run the program using the terminal: "python security_tool.py" or hit the run button.
 
 ## Testing and Evidence
 
-The program has been tested using:
+I have tested this program using:
 
 - Correct and incorrect passwords.
 
@@ -90,14 +64,4 @@ The program has been tested using:
 
 - Selecting the Exit option.
 
-Screenshots of the program running in Visual Studio Code are included in this branch.
-
-## Files
-
-Python implementation.
-
-README.md – Task documentation.
-
-LICENSE – Repository licence.
-
-Testing screenshots.
+Screenshots of my testing are in test.py.
