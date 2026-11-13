@@ -16,34 +16,6 @@ security_tools.py which contains reusable functions for password validation, IP 
 
 main.py file which imports the security-tools.py module, requests inputs from the user and displays the results of the validation functions.
 
-## Features
-
-### 1. Password Validation
-
-- Checks if a password meets the minimum length requirement.
-
-- Checks for at least one upper case character, number and symbol.
-
-### 2. IP Address Validation
-
-- Checks that an IP address contains three dots.
-
-- Checks that it contains four numbers (octets).
-
-- Checks that each octet is between 0 and 255.
-
-### 3. Random Password Generator
-
-- Generates a random password between 10 and 16 characters long.
-
-- Includes uppercase letters, lowercase letters, digits and symbols.
-
-- Uses a random function to determine the password length.
-
-## Project Structure
-
-The branch holds two main Python files:
-
 ### 1. security_tools.py
 
 - Contains the reusable cyber security functions.
@@ -74,7 +46,7 @@ Requirements:
 
 - Visual Studio Code or another Python-compatible editor.
 
-## Instructions:
+## How to:
 
 - Open the cyber-security-utilities branch.
 
@@ -90,7 +62,7 @@ Requirements:
 
 Note: Run main.py rather than security_tools.py, as the main file imports and uses the functions from the module.
 
-## Testing and Evidence
+## Testing
 
 The project has been tested using:
 
