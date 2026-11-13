@@ -10,27 +10,9 @@ Banner ID: b01888101
 
 ## Description
 
-This program performs basic IPv4 address validation using a user-defined function called validate_ip().
+This program runs a basic IPv4 address check using my function called validate_ip().
 
-The function accepts an IP address as a parameter and checks if it follows the basic structure of an IPv4 address.
-
-The program uses string operations, conditional statements and a function to determine whether the entered IP address meets the required validation checks.
-
-## Features
-
-The program performs the following checks:
-
-- Checks if the IP address contains dots.
-
-- Checks that there are exactly three dots.
-
-- Checks that the address contains four numbers (octets).
-
-- Checks that each number is between 0 and 255.
-
-- Returns True for an address that passes the checks.
-
-- Returns False if the address fails validation.
+The function gets an IP address from a user input and checks if it follows the basic structure of an IPv4 address that I have set.
 
 ## Example Inputs and Outputs
 
@@ -58,8 +40,6 @@ Invalid
 
 Valid
 
-Note: This exercise performs basic IPv4 format validation rather than a complete network or IP address validation system.
-
 ## How to Run
 
 ### Requirements:
@@ -70,21 +50,17 @@ Note: This exercise performs basic IPv4 format validation rather than a complete
 
 ### Instructions:
 
-- Open the ip-address-validator branch.
+- Download or clone this repository.
 
-- Download or clone the repository.
+- Open the program in Visual Studio Code or python.
 
-- Open the Python program in Visual Studio Code.
-
-- Open the terminal.
-
-- Run the program: "python ip_address_validator.py"
+- Open the terminal and run the program: "python ip_address_validator.py" or hit the run button.
 
 ## Testing and Evidence
 
-The program has been tested using:
+I have tested this program using:
 
-- A correctly formatted IPv4 address.
+- Valid IPv4 address.
 
 - An address containing more than three dots.
 
@@ -98,15 +74,4 @@ The program has been tested using:
 
 - An address containing unnecessary spaces.
 
-Screenshots of the validation results are included in this branch.
-
-## Files
-
-- Python implementation.
-
-- README.md – Task documentation.
-
-- LICENSE – Repository licence.
-
-- Testing screenshots.
-
+Screenshots of my test results are included in test.png.
